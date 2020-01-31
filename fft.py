@@ -3,11 +3,11 @@ import numpy as np
 from matplotlib import pyplot as py
 import radialProfile as rp
 
-img = cv2.imread('imageER.jpg', 0)
+img = cv2.imread('imageMP.jpg', 0)
 f = np.fft.fft2(img)
 fshift = np.fft.fftshift(f)
-print("FFT",f)
-print("FFT shift",fshift)
+print("FFT", f)
+print("FFT shift", fshift)
 # print(len(fshift), len(fshift[0]))
 filtr = [0] * 100
 #
